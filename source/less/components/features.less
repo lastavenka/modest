@@ -1,0 +1,69 @@
+.features {
+  background-color: @blue;
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  &__wrap {
+    .wrapper;
+    max-width: 1140px;
+  }
+
+  &__title {
+    position: relative;
+    font-family: "Quattrocento Sans", Arial, sans-serif;
+    font-size: @font-size-h2;
+    line-height: @line-height-base + 1.6;
+    color: @white;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 57px;
+    padding-left: 23px;
+    text-transform: uppercase;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 10px;
+      height: 35px;
+      background-color: @blue-light;
+      left: 0;
+      top: 3px;
+    }
+  }
+
+  &__list {
+    .list-to-flex;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: 32%;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  &__name {
+    font-family: "Quattrocento Sans", Arial, sans-serif;
+    font-size: @font-size-base + .2;
+    line-height: @line-height-base + 1.6;
+    color: @white;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    color: @grey-lighten;
+    margin: 0;
+  }
+}
