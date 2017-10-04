@@ -1,4 +1,5 @@
 .page-header {
+  min-width: 1200px;
   position: relative;
 }
 
@@ -8,8 +9,6 @@
   top: 0;
   background-color: @blue-darken;
   z-index: 100;
-
-
   &__wrap {
     .wrapper;
     padding-top: 25px;
@@ -19,7 +18,6 @@
     align-items: center;
     max-width: 1140px;
   }
-
   &__logo {
     display: block;
     width: 99px;
@@ -30,7 +28,6 @@
 .main-nav {
   display: flex;
   justify-content: space-between;
-
   &__item {
     margin-left: 10px;
     display: block;
@@ -41,18 +38,14 @@
     border-radius: 5px;
     border: 2px solid @blue-darken;
     text-transform: uppercase;
-
-
     &:hover {
       border: 2px solid @grey-green;
       color: @grey-green;
     }
   }
-
   &__active-item {
     color: @green;
     border-color: @green;
-
     &:hover {
       color: @green;
       border-color: @green;
@@ -60,24 +53,20 @@
   }
 }
 
-
 .promo {
   background-image: url("../img/header__bg.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 222px;
   padding-bottom: 30px;
-
   @media (-webkit-min-device-pixel-ratio: 2) {
     background-image: url("../img/header__bg@2x.jpg");
   }
-
   &__wrap {
     .wrapper;
     .clearfix();
     max-width: 1140px;
   }
-
   &__title {
     width: 100%;
     font-family: "Quattrocento Sans", Arial, sans-serif;
@@ -90,7 +79,6 @@
     float: left;
     text-transform: uppercase;
   }
-
   &__text {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: @font-size-base;
@@ -101,7 +89,6 @@
     float: left;
     width: 51%;
   }
-
   &__btn-wrap {
     float: left;
     width: 100%;
@@ -109,7 +96,6 @@
     justify-content: flex-start;
     margin-bottom: 205px;
   }
-
   &__btn {
     display: block;
     font-family: "Quattrocento Sans", Arial, sans-serif;
@@ -121,31 +107,27 @@
     text-transform: uppercase;
     border-radius: 5px;
     margin-right: 11px;
-
     &:hover {
       border-color: @green;
       background-color: @green;
+      transition: background-color .2s;
     }
   }
-
   &__pagination {
     float: right;
     display: flex;
     justify-content: space-between;
   }
-
   &__pagination-item {
     display: block;
     width: 9px;
     height: 9px;
     border: 2px solid @white;
     border-radius: 50%;
-
     &--active {
       background-color: @white;
       margin: 0 9px;
     }
-
     &:hover {
       cursor: pointer;
     }

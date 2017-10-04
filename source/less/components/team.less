@@ -1,13 +1,12 @@
 .team {
+  min-width: 1200px;
   background-color: @white;
   padding-top: 80px;
   padding-bottom: 100px;
-
   &__wrap {
     .wrapper;
     max-width: 1140px;
   }
-
   &__title {
     position: relative;
     font-family: "Quattrocento Sans", Arial, sans-serif;
@@ -19,7 +18,6 @@
     margin-bottom: 57px;
     padding-left: 23px;
     text-transform: uppercase;
-
     &:before {
       position: absolute;
       display: block;
@@ -31,39 +29,33 @@
       top: 3px;
     }
   }
-
   &__list {
     .list-to-flex;
   }
-
   &__item {
     width: 23%;
-    position: relative;
     padding-bottom: 19px;
     background-color: @grey-light;
-
     &:hover {
       background-color: @blue;
-
       .team__name {
         color: @white;
       }
-
       .team__position {
         color: @white;
       }
-
       .team__overlay {
         display: block;
       }
     }
   }
-
+  &__inner {
+    position: relative;
+  }
   &__img {
     display: block;
     width: 100%;
   }
-
   &__name {
     font-family: "Quattrocento Sans", Arial, sans-serif;
     font-size: @font-size-base;
@@ -75,7 +67,6 @@
     margin-top: 16px;
     margin-left: 20px;
   }
-
   &__position {
     display: block;
     font-family: "Open Sans", Arial, sans-serif;
@@ -84,7 +75,6 @@
     color: @grey-blue;
     margin-left: 20px;
   }
-
   &__overlay {
     cursor: pointer;
     display: none;
@@ -92,32 +82,27 @@
     top: 0;
     left: 0;
     z-index: 1;
-    height: 80%;
+    height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, .4);
   }
-
   &__social {
     .list-to-flex;
     width: 58%;
     margin: 0 auto;
     margin-top: 42%;
-
-
-
     a {
       display: block;
-      width: 18px;
+      width: 33%;
       height: 18px;
-      padding: 16px;
+      padding: 30%;
       background-color: @blue;
       font-size: 0;
-
       &:hover {
         background-color: @blue-light;
+        transition: background-color .2s;
       }
     }
-
     svg {
       fill: @white;
     }

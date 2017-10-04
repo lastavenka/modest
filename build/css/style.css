@@ -462,6 +462,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 .retina-sprites(@retina-groups);
 */
 .page-footer {
+  min-width: 1200px;
   background-color: #3a454d;
   padding-top: 40px;
   padding-bottom: 35px;
@@ -492,11 +493,13 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 .page-footer__social a {
   display: block;
   font-size: 0;
+  height: 18px;
 }
 .page-footer__social svg {
   fill: #fff;
 }
 .page-header {
+  min-width: 1200px;
   position: relative;
 }
 .top-header {
@@ -612,6 +615,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 .promo__btn:hover {
   border-color: #23b7a4;
   background-color: #23b7a4;
+  transition: background-color 0.2s;
 }
 .promo__pagination {
   float: right;
@@ -633,6 +637,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   cursor: pointer;
 }
 .about {
+  min-width: 1200px;
   background-color: #fff;
   padding-top: 80px;
   padding-bottom: 100px;
@@ -685,24 +690,27 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 }
 .about__social {
   display: flex;
+  justify-content: space-between;
+  list-style: none;
   margin: 0;
   padding: 0;
-  list-style: none;
   width: 46%;
 }
 .about__social li {
+  text-align: center;
+  width: 20%;
   margin-right: 1px;
 }
 .about__social a {
   display: block;
-  width: 25px;
   height: 25px;
-  padding: 18px;
+  padding: 30% 0;
   background-color: #c8cdd0;
   font-size: 0;
 }
 .about__social a:hover {
   background-color: #d0d5d9;
+  transition: background-color 0.2s;
 }
 .about__social svg {
   fill: #fff;
@@ -731,6 +739,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   font-family: "Quattrocento Sans", Arial, sans-serif;
   font-size: 2rem;
   font-weight: bold;
+  margin-right: 3%;
 }
 .about__goals-content {
   width: 85%;
@@ -754,6 +763,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   margin: 0;
 }
 .contact {
+  min-width: 1200px;
   position: relative;
   background-color: #fff;
   padding-top: 70px;
@@ -873,7 +883,16 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   top: 160px;
   height: 345px;
 }
+.contact__overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 345px;
+  top: 345px;
+  margin-top: -345px;
+}
 .features {
+  min-width: 1200px;
   background-color: #3a454d;
   padding-top: 80px;
   padding-bottom: 120px;
@@ -940,6 +959,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   margin: 0;
 }
 .gallery {
+  min-width: 1200px;
   background-color: #3a454d;
   padding-top: 80px;
   padding-bottom: 60px;
@@ -1038,7 +1058,12 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   padding: 6px 0;
   text-align: center;
 }
+.gallery__btn:hover {
+  border-color: #23b7a4;
+  background-color: #23b7a4;
+}
 .services {
+  min-width: 1200px;
   background-color: #fff;
   padding-top: 80px;
   padding-bottom: 165px;
@@ -1107,6 +1132,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   margin: 0;
 }
 .team {
+  min-width: 1200px;
   background-color: #fff;
   padding-top: 80px;
   padding-bottom: 100px;
@@ -1147,7 +1173,6 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 }
 .team__item {
   width: 23%;
-  position: relative;
   padding-bottom: 19px;
   background-color: #e1e6ea;
 }
@@ -1162,6 +1187,9 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 }
 .team__item:hover .team__overlay {
   display: block;
+}
+.team__inner {
+  position: relative;
 }
 .team__img {
   display: block;
@@ -1193,7 +1221,7 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
   top: 0;
   left: 0;
   z-index: 1;
-  height: 80%;
+  height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -1209,14 +1237,15 @@ The `.retina-sprites` mixin generates a CSS rule and media query for retina grou
 }
 .team__social a {
   display: block;
-  width: 18px;
+  width: 33%;
   height: 18px;
-  padding: 16px;
+  padding: 30%;
   background-color: #3a454d;
   font-size: 0;
 }
 .team__social a:hover {
   background-color: #4e5a62;
+  transition: background-color 0.2s;
 }
 .team__social svg {
   fill: #fff;
